@@ -82,6 +82,10 @@ export default function Freelances() {
     fetchFreelances()
   }, [])
 
+  if (error) {
+    return <span>Oups il y a eu un problème</span>
+  }
+
   return (
     <div>
       <PageTitle>Trouvez votre prestataire</PageTitle>
